@@ -1,0 +1,143 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #f3f4f6;
+  transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.navbar-logo-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid var(--brand-pink);
+  padding: 2px;
+  object-fit: cover;
+}
+
+.navbar-logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-logo-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.navbar-logo-subtitle {
+  font-size: 10px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+/* Desktop Links */
+.navbar-links {
+  display: none;
+  align-items: center;
+  gap: 2.5rem;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #1a1a1a;
+  transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+  color: var(--brand-pink);
+}
+
+.navbar-cta {
+  background-color: var(--brand-pink);
+  color: white !important;
+  padding: 0.625rem 1.5rem;
+  border-radius: 9999px;
+}
+
+/* Mobile hamburger */
+.navbar-hamburger {
+  display: block;
+  background: none;
+  border: none;
+  color: var(--brand-pink);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  display: none;
+  width: 100%;
+  background: white;
+  border-top: 1px solid #f3f4f6;
+  padding: 2rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.875rem;
+}
+
+.mobile-menu.open {
+  display: flex;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color: #1a1a1a;
+  transition: color 0.3s;
+}
+
+.mobile-menu a:hover {
+  color: var(--brand-pink);
+}
+
+.mobile-menu .mobile-cta {
+  color: var(--brand-pink);
+}
+
+/* Desktop breakpoint */
+@media (min-width: 1024px) {
+  .navbar-links {
+    display: flex;
+  }
+
+  .navbar-hamburger {
+    display: none;
+  }
+}
