@@ -67,12 +67,12 @@ export default function Gallery() {
             data-aos-delay={item.delay}
           >
             {item.type === 'video' ? (
-              <video 
-                src={item.src} 
-                autoPlay 
-                loop 
-                muted 
-                playsInline 
+              <video
+                src={item.src}
+                autoPlay
+                loop
+                muted
+                playsInline
                 disablePictureInPicture
                 controls={false}
               />
@@ -86,4 +86,3 @@ export default function Gallery() {
     </section>
   )
 }
-
