@@ -1,19 +1,9 @@
-/* ========================================
-   PaymentMethods Component Styles
-   ======================================== */
 .payment-methods {
   padding: 5rem 0;
   background-color: var(--brand-pink);
   color: white;
   overflow: hidden;
   position: relative;
-}
-
-.payment-bg-pattern {
-  position: absolute;
-  inset: 0;
-  opacity: 0.1;
-  background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
 }
 
 .payment-container {
@@ -35,9 +25,12 @@
 
 .payment-grid {
   display: flex;
-  flex-direction: column; /* Stack vertically on mobile */
-  align-items: center;    /* Center the items */
-  gap: 2rem;              /* Space between rows */
+  flex-direction: column;
+  /* Stack vertically on mobile */
+  align-items: center;
+  /* Center the items */
+  gap: 2rem;
+  /* Space between rows */
 }
 
 .payment-item {
@@ -71,12 +64,13 @@
 /* Responsive */
 @media (min-width: 768px) {
   .payment-grid {
-    flex-direction: row; /* Horizontal on larger screens */
+    flex-direction: row;
+    /* Horizontal on larger screens */
     flex-wrap: wrap;
     justify-content: center;
     gap: 4rem;
   }
-  
+
   .payment-icon {
     width: 5rem;
     height: 5rem;
