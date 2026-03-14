@@ -1,0 +1,95 @@
+/* ========================================
+   PaymentMethods Component Styles
+   ======================================== */
+.payment-methods {
+  padding: 5rem 0;
+  background-color: var(--brand-pink);
+  color: white;
+  overflow: hidden;
+  position: relative;
+}
+
+.payment-bg-pattern {
+  position: absolute;
+  inset: 0;
+  opacity: 0.1;
+  background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+}
+
+.payment-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  position: relative;
+  z-index: 10;
+  text-align: center;
+}
+
+.payment-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.payment-grid {
+  display: flex;
+  flex-direction: column; /* Stack vertically on mobile */
+  align-items: center;    /* Center the items */
+  gap: 2rem;              /* Space between rows */
+}
+
+.payment-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.payment-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.payment-label {
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .payment-grid {
+    flex-direction: row; /* Horizontal on larger screens */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+  }
+  
+  .payment-icon {
+    width: 5rem;
+    height: 5rem;
+    font-size: 1.875rem;
+  }
+
+  .payment-label {
+    font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .payment-grid {
+    gap: 8rem;
+  }
+}
