@@ -6,11 +6,13 @@
   --brand-white: #ffffff;
 }
 
+html,
 body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--brand-white);
   color: #1a1a1a;
   overflow-x: hidden;
+  width: 100%;
   margin: 0;
   padding: 0;
 }
