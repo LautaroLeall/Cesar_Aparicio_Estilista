@@ -9,7 +9,7 @@ Una plataforma premium diseñada para transmitir excelencia, profesionalismo y t
 
 ## 🌐 Ver Proyecto Online
 
-[![César Aparicio Estilista](https://img.shields.io/badge/César%20Aparicio%20Estilista-cd0d7e?style=for-the-badge)](https://cesar-aparicio-estilista.netlify.app)
+[![César Aparicio Estilista](https://img.shields.io/badge/César%20Aparicio%20Estilista-cd0d7e?style=for-the-badge)](https://cesar-aparicio-estilista.netlify.app/)
 
 ---
 
