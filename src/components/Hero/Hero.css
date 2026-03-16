@@ -5,6 +5,8 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Background layers */
@@ -58,7 +60,7 @@
   z-index: 10;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 6rem 1.5rem 2rem 1.5rem;
   text-align: center;
   width: 100%;
 }
@@ -66,20 +68,23 @@
 .hero-subtitle {
   color: rgba(255, 255, 255, 0.8);
   text-transform: uppercase;
-  letter-spacing: 0.5em;
-  font-size: 0.75rem;
+  letter-spacing: 0.15em; 
+  font-size: 0.65rem; 
   margin-bottom: 1.5rem;
   display: inline-block;
-  padding: 0.25rem 1rem;
+  padding: 0.25rem 0.5rem;
   border-left: 4px solid var(--brand-pink);
+  max-width: 100%;
+  box-sizing: border-box;
+  word-wrap: break-word;
 }
 
 .hero-title {
-  font-size: 3.75rem;
+  font-size: 2.8rem;
   color: white;
   font-weight: 700;
   line-height: 0.9;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -90,11 +95,13 @@
 
 .hero-description {
   color: rgba(255, 255, 255, 0.9);
-  font-size: 1.125rem;
+  font-size: 1.1rem;
   font-weight: 300;
   margin-bottom: 3rem;
   max-width: 42rem;
-  line-height: 1.7;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
 }
 
 /* CTA buttons */
