@@ -7,7 +7,7 @@ export default function Hero() {
       {/* Background layers */}
       <div className="hero-bg">
         <img
-          src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=1920"
+          src="/hero.jpg"
           className="hero-bg-img"
           alt="Background"
         />
