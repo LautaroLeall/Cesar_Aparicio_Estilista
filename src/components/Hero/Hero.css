@@ -19,7 +19,13 @@
   height: 100%;
   object-fit: cover;
   transform: scale(1.05);
-  animation: heroPulse 10s infinite ease-in-out;
+}
+
+/* Animación solo en desktop */
+@media (min-width: 768px) {
+  .hero-bg-img {
+    animation: heroPulse 10s infinite ease-in-out;
+  }
 }
 
 @keyframes heroPulse {
