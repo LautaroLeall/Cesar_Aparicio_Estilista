@@ -51,18 +51,18 @@ const GALLERY_ITEMS = [
 export default function Gallery() {
   return (
     <section id="galeria" className="gallery">
-      <div className="gallery-header">
-        <h2 className="gallery-title">
+      <div className="gallery-header text-center">
+        <h2 className="gallery-title mb-3">
           Nuestra <span className="highlight">Galería</span>
         </h2>
         <p className="gallery-subtitle">Resultados reales de César Aparicio</p>
       </div>
 
-      <div className="gallery-grid">
+      <div className="gallery-grid grid gap-5">
         {GALLERY_ITEMS.map((item, index) => (
           <div
             key={index}
-            className={`gallery-item ${item.type}`}
+            className={`gallery-item relative ${item.type}`}
             data-aos="fade-up"
             data-aos-delay={item.delay}
           >
