@@ -1,13 +1,11 @@
 .contact {
   padding: 8rem 0;
   background: white;
-  position: relative;
 }
 
 .contact-container {
   max-width: 1180px;
   margin: 0 auto;
-  padding: 1rem 2rem;
 }
 
 .contact-card {
@@ -23,14 +21,11 @@
 
 /* Form Side */
 .contact-form-side {
-  padding: 2.5rem;
   background: white;
-  flex: 1;
 }
 
 .contact-title {
   font-size: 2.2rem;
-  margin-bottom: 0.5rem;
 }
 
 .contact-title .highlight {
@@ -39,19 +34,7 @@
 
 .contact-subtitle {
   color: #9ca3af;
-  margin-bottom: 1rem;
   font-size: 1rem;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.contact-form-row {
-  display: grid;
-  gap: 1.5rem;
 }
 
 .contact-input {
@@ -59,7 +42,7 @@
   padding: 1rem 1.5rem;
   border-radius: 1rem;
   background: #f9fafb;
-  border: 2px solid transparent;
+  border: 2px solid rgba(205, 13, 126, 0.1);
   outline: none;
   transition: border-color 0.3s;
   font-family: inherit;
@@ -72,16 +55,11 @@
 
 .contact-submit {
   width: 100%;
-  padding: 1.1rem;
   border-radius: 1rem;
   font-weight: 700;
   color: white;
   border: none;
   background: linear-gradient(135deg, var(--brand-pink) 0%, var(--brand-pink-dark) 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
   font-size: 1rem;
   cursor: pointer;
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
@@ -89,16 +67,8 @@
 
 /* Info Side */
 .contact-info-side {
-  padding: 2.5rem;
   background: linear-gradient(135deg, var(--brand-pink) 0%, var(--brand-pink-dark) 100%);
   color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.contact-info-block {
-  margin-bottom: 3rem;
 }
 
 .contact-info-label {
@@ -107,31 +77,22 @@
   text-transform: uppercase;
   letter-spacing: 0.4em;
   opacity: 0.8;
-  margin-bottom: 1rem;
 }
 
 .contact-info-value {
   font-size: 1.25rem;
   font-weight: 700;
-  gap: 0.75rem;
-}
-
-.contact-info-value div p {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
 }
 
 .contact-info-sub {
-  margin-top: 0.5rem;
   color: rgba(255, 255, 255, 0.7);
   font-style: italic;
 }
 
-.contact-social {
-  display: flex;
-  gap: 1.5rem;
-  margin-bottom: 1rem;
+.contact-info-time {
+  font-size: 1.875rem;
+  font-weight: bold;
+  letter-spacing: -0em;
 }
 
 .contact-social a {
