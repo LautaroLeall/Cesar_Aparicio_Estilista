@@ -27,18 +27,18 @@ export default function Contact() {
   }
 
   return (
-    <section id="contacto" className="contact">
-      <div className="contact-container">
+    <section id="contacto" className="contact relative">
+      <div className="contact-container p-5">
         <div className="contact-card">
           {/* Form Side */}
-          <div className="contact-form-side">
-            <h2 className="contact-title">
+          <div className="contact-form-side p-10 flex-1">
+            <h2 className="contact-title mb-1">
               Solicitá <span className="highlight">tu turno</span>
             </h2>
-            <p className="contact-subtitle">Hacé clic para coordinar tu horario ideal.</p>
+            <p className="contact-subtitle mb-5">Hacé clic para coordinar tu horario ideal.</p>
 
-            <form onSubmit={handleSubmit} className="contact-form">
-              <div className="contact-form-row">
+            <form onSubmit={handleSubmit} className="contact-form flex flex-col gap-8">
+              <div className="contact-form-row grid gap-5">
                 <input
                   type="text"
                   name="name"
@@ -71,44 +71,44 @@ export default function Contact() {
                 placeholder="Algún detalle que quieras comentar..."
                 className="contact-input"
               />
-              <button type="submit" className="contact-submit btn-premium">
+              <button type="submit" className="contact-submit btn-premium flex items-center justify-center gap-2 p-4">
                 ENVIAR CONSULTA <FaWhatsapp />
               </button>
             </form>
           </div>
 
           {/* Info Side */}
-          <div className="contact-info-side">
+          <div className="contact-info-side flex flex-col justify-center p-8">
             <div className="contact-info-blocks">
-              <div className="contact-info-block">
-                <h4 className="contact-info-label">Ubicación</h4>
+              <div className="contact-info-block mb-15">
+                <h4 className="contact-info-label mb-3">Ubicación</h4>
                 <div className="contact-info-value">
                   <a href="https://maps.app.goo.gl/uDNfGJa7a26upHzi7" target="_blank" rel="noreferrer">
                     <div>
-                      <p>
+                      <p className="flex items-center gap-2">
                         <FaLocationDot />
                         Batalla de Suipacha 460
                       </p>
                     </div>
                     <div>
-                      <p className="contact-info-sub">(Puerta Negra)</p>
+                      <p className="contact-info-sub mt-2">(Puerta Negra)</p>
                     </div>
                   </a>
                 </div>
               </div>
-              <div className="contact-info-block">
-                <h4 className="contact-info-label">Horarios</h4>
+              <div className="contact-info-block mb-8">
+                <h4 className="contact-info-label mb-3">Horarios</h4>
                 <p className="contact-info-sub" style={{ fontSize: '1.25rem', fontWeight: 'bold' }}>
                   Martes a Sábados
                 </p>
-                <p style={{ fontSize: '1.875rem', fontWeight: 'bold', letterSpacing: '-0em', marginTop: '0.25rem' }}>
+                <p className='contact-info-time mt-1'>
                   14:00 - 21:00 hs.
                 </p>
               </div>
             </div>
 
             <div>
-              <div className="contact-social">
+              <div className="contact-social flex gap-5 my-4">
                 <a href="https://www.instagram.com/cesaraparicioestilista_/" target="_blank" rel="noreferrer">
                   <FaInstagram />
                 </a>
