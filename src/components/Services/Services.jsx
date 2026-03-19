@@ -29,12 +29,12 @@ const QUICK_TAGS = ['Balayage', 'Iluminación', 'Plastificados', 'Alisados de Or
 
 export default function Services() {
   return (
-    <section id="servicios" className="services">
-      <div className="services-decoration" />
+    <section id="servicios" className="services relative">
+      <div className="services-decoration absolute" />
 
-      <div className="services-container">
+      <div className="services-container relative">
         {/* Header */}
-        <div className="services-header">
+        <div className="services-header text-center">
           <h2 className="services-title" data-aos="fade-up">
             Nuestros <span className="highlight">Servicios</span>
           </h2>
@@ -45,18 +45,20 @@ export default function Services() {
         </div>
 
         {/* Cards */}
-        <div className="services-grid">
+        <div className="services-grid grid gap-10">
           {SERVICES.map((service, index) => (
             <div
               key={index}
-              className="service-card"
+              className="service-card p-8"
               data-aos="zoom-in"
               data-aos-delay={service.delay}
             >
-              <div className="service-card-icon">{service.icon}</div>
-              <h3 className="service-card-title">{service.title}</h3>
-              <p className="service-card-desc">{service.desc}</p>
-              <ul className="service-card-tags">
+              <div className="service-card-icon flex items-center justify-center mb-8">
+                {service.icon}
+              </div>
+              <h3 className="service-card-title mb-4">{service.title}</h3>
+              <p className="service-card-desc mb-5">{service.desc}</p>
+              <ul className="service-card-tags m-0 p-0">
                 {service.tags.map((tag, i) => (
                   <li key={i}>• {tag.toUpperCase()}</li>
                 ))}
@@ -66,7 +68,7 @@ export default function Services() {
         </div>
 
         {/* Quick tags */}
-        <div className="services-tags" data-aos="fade-up">
+        <div className="services-tags flex flex-wrap justify-center gap-4 mt-8" data-aos="fade-up">
           {QUICK_TAGS.map((tag, i) => (
             <span key={i} className="services-tag">
               {tag}
