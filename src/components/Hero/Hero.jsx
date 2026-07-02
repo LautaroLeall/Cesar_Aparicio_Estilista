@@ -10,6 +10,7 @@ export default function Hero() {
           src="/hero.jpg"
           className="hero-bg-img"
           alt="Background"
+          fetchPriority="high"
         />
         <div className="hero-overlay-dark absolute" />
         <div className="hero-overlay-gradient absolute" />

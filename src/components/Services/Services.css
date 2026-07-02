@@ -134,7 +134,9 @@
 }
 
 @media (min-width: 1024px) {
+  /* Restrict grid width so 2x2 cards are not excessively wide, and center it */
   .services-grid {
-    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 900px;
+    margin: 0 auto;
   }
 }

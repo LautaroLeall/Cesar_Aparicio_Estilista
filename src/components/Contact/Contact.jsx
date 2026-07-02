@@ -60,6 +60,7 @@ export default function Contact() {
                   <option value="Corte Masculino">Corte Masculino</option>
                   <option value="Balayage / Reflejos">Colorimetría (Balayage/Reflejos)</option>
                   <option value="Alisado / Nutrición">Alisado / Nutrición</option>
+                  <option value="Pelucas / Prótesis / Implantes">Pelucas / Prótesis / Implantes</option>
                   <option value="Otro">Otro / Consulta</option>
                 </select>
               </div>

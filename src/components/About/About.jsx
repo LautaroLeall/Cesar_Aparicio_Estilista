@@ -12,6 +12,7 @@ export default function About() {
               src="/cesar-aparicio.png"
               alt="César Aparicio"
               className="about-image"
+              loading="lazy"
             />
             <div className="about-stats-badge absolute none">
               <p className="about-stats-number">+12.9k</p>
@@ -33,8 +34,8 @@ export default function About() {
               tu belleza natural.
             </p>
             <p className="about-text">
-              Ubicado en Suipacha 460, ofrezco una
-              experiencia premium donde cada detalle cuenta. Desde el
+              Ubicado en Batalla de Suipacha 460, ofrezco una
+              experiencia premium personalizada donde cada detalle cuenta. Desde el
               diagnóstico inicial hasta el sellado final.
             </p>
             <div className="about-info-grid grid gap-10 mt-8">
