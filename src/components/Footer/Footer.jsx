@@ -11,7 +11,7 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container text-center">
-        <img src="/logo-estilista-sinfondo.png" alt="César Aparicio Logo" className="footer-logo p-0.5" />
+        <img src="/logo-estilista-sinfondo2.png" alt="César Aparicio Logo" className="footer-logo p-0.5" />
         <h5 className="footer-title mb-3">César Aparicio</h5>
         <p className="footer-desc">
           Peluquería & Estilismo de alta gama en San Miguel de Tucumán. Especialista
@@ -19,9 +19,10 @@ export default function Footer() {
         </p>
 
         <div className="footer-links flex justify-center flex-wrap gap-5 mt-5">
-          <a href="#servicios">Servicios</a>
-          <a href="#galeria">Trabajos</a>
-          <a href="#contacto">Contacto</a>
+          <a href="/#inicio">Inicio</a>
+          <a href="/#servicios">Servicios</a>
+          <a href="/#galeria">Trabajos</a>
+          <a href="/#contacto">Contacto</a>
         </div>
 
         <div className="footer-bottom flex flex-col items-center gap-8 pt-8 mt-8">
