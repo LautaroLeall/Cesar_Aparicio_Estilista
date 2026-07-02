@@ -1,26 +1,21 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar'
-import Hero from './components/Hero/Hero'
-import About from './components/About/About'
-import Services from './components/Services/Services'
-import Gallery from './components/Gallery/Gallery'
-import PaymentMethods from './components/PaymentMethods/PaymentMethods'
-import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
+import Home from './pages/Home/Home'
+import Protesis from './pages/Protesis/Protesis'
 
 function App() {
   return (
-    <>
+    <Router>
       <Navbar />
       <main>
-        <Hero />
-        <About />
-        <Services />
-        <PaymentMethods />
-        <Gallery />
-        <Contact />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/protesis" element={<Protesis />} />
+        </Routes>
       </main>
       <Footer />
-    </>
+    </Router>
   )
 }
 

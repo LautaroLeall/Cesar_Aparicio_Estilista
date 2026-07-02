@@ -1,0 +1,181 @@
+.protesis-btn {
+  background: linear-gradient(135deg, var(--brand-pink) 0%, var(--brand-pink-dark) 100%);
+}
+
+@media (min-width: 768px) {
+  .protesis-title {
+    font-size: 4rem;
+  }
+}
+
+/* Certification Section */
+.protesis-cert-container {
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  gap: 3rem;
+}
+
+@media (min-width: 768px) {
+  .protesis-cert-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.protesis-cert-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.protesis-cert-highlight {
+  color: var(--brand-pink);
+}
+
+.protesis-cert-desc {
+  font-size: 1.125rem;
+  color: #374151;
+  line-height: 1.625;
+}
+
+.protesis-cert-list {
+  gap: 1rem;
+}
+
+.protesis-cert-item {
+  gap: 0.75rem;
+  color: #1f2937;
+}
+
+.protesis-cert-icon {
+  color: var(--brand-pink);
+  font-size: 1.25rem;
+}
+
+.protesis-btn {
+  padding: 1rem 2rem;
+  border-radius: 9999px;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  gap: 0.75rem;
+  display: inline-flex;
+}
+
+.protesis-btn-icon {
+  font-size: 1.5rem;
+}
+
+.cert-image-wrapper {
+  padding: 0.5rem;
+}
+
+.cert-image-bg {
+  inset: 0;
+  background-color: var(--brand-pink);
+  border-radius: 1rem;
+  opacity: 0.1;
+  transform: translate(1rem, 1rem);
+}
+
+.cert-image-img {
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 20px 25px -5px rgba(205, 13, 126, 0.2);
+  pointer-events: none;
+}
+
+.cert-image-badge {
+  bottom: -1.5rem;
+  left: -1.5rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 9999px;
+  box-shadow: 0 10px 15px -3px rgba(205, 13, 126, 0.2);
+}
+
+.cert-badge-icon {
+  font-size: 3.75rem;
+  color: var(--brand-pink);
+}
+
+/* Gallery Section */
+.protesis-gallery-container {
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.protesis-gallery-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.protesis-gallery-grid {
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .protesis-gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.protesis-media {
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.protesis-media-content {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: transform 0.5s;
+  pointer-events: none;
+}
+
+.protesis-media:hover .protesis-media-content {
+  transform: scale(1.05);
+}
+
+/* Modal */
+.protesis-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 1rem;
+}
+
+.protesis-modal-close {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  color: white;
+  font-size: 1.875rem;
+  z-index: 999;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.protesis-modal-close:hover {
+  color: var(--brand-pink);
+}
+
+.protesis-modal-content {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.protesis-modal-media {
+  max-height: 85vh;
+  width: auto;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 25px 50px -12px rgba(205, 13, 126, 0.25);
+}
