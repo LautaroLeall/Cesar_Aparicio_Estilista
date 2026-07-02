@@ -1,4 +1,5 @@
-import { FaScissors, FaPalette, FaWandMagicSparkles } from 'react-icons/fa6'
+import { Link } from 'react-router-dom'
+import { FaScissors, FaPalette, FaWandMagicSparkles, FaUserTie } from 'react-icons/fa6'
 import './Services.css'
 
 const SERVICES = [
@@ -23,9 +24,17 @@ const SERVICES = [
     tags: ['Brillo Espejo', 'Salud Capilar'],
     delay: 200,
   },
+  {
+    icon: <FaUserTie />,
+    title: 'Pelucas & Prótesis',
+    desc: 'Soluciones capilares avanzadas, prótesis e implantes certificados.',
+    tags: ['Especializado', 'Ver Detalles'],
+    delay: 300,
+    link: '/protesis',
+  },
 ]
 
-const QUICK_TAGS = ['Balayage', 'Iluminación', 'Plastificados', 'Alisados de Oro']
+const QUICK_TAGS = ['Balayage', 'Iluminación', 'Plastificados', 'Alisados de Oro', 'Prótesis Capilares']
 
 export default function Services() {
   return (
@@ -46,25 +55,34 @@ export default function Services() {
 
         {/* Cards */}
         <div className="services-grid grid gap-10">
-          {SERVICES.map((service, index) => (
-            <div
-              key={index}
-              className="service-card p-8"
-              data-aos="zoom-in"
-              data-aos-delay={service.delay}
-            >
-              <div className="service-card-icon flex items-center justify-center mb-8">
-                {service.icon}
+          {SERVICES.map((service, index) => {
+            const card = (
+              <div
+                className="service-card p-8 h-full"
+                data-aos="zoom-in"
+                data-aos-delay={service.delay}
+              >
+                <div className="service-card-icon flex items-center justify-center mb-8">
+                  {service.icon}
+                </div>
+                <h3 className="service-card-title mb-4">{service.title}</h3>
+                <p className="service-card-desc mb-5">{service.desc}</p>
+                <ul className="service-card-tags m-0 p-0">
+                  {service.tags.map((tag, i) => (
+                    <li key={i}>• {tag.toUpperCase()}</li>
+                  ))}
+                </ul>
               </div>
-              <h3 className="service-card-title mb-4">{service.title}</h3>
-              <p className="service-card-desc mb-5">{service.desc}</p>
-              <ul className="service-card-tags m-0 p-0">
-                {service.tags.map((tag, i) => (
-                  <li key={i}>• {tag.toUpperCase()}</li>
-                ))}
-              </ul>
-            </div>
-          ))}
+            )
+
+            return service.link ? (
+              <Link to={service.link} key={index} className="block hover:scale-[1.02] transition-transform duration-300">
+                {card}
+              </Link>
+            ) : (
+              <div key={index}>{card}</div>
+            )
+          })}
         </div>
 
         {/* Quick tags */}
