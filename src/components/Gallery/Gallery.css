@@ -16,7 +16,7 @@
 }
 
 .gallery-title .highlight {
-  color: var(--brand-pink);
+  color: var(--brand-primary);
 }
 
 .gallery-subtitle {
@@ -88,7 +88,7 @@
 .gallery-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(196, 29, 131, 0.7), transparent);
+  background: linear-gradient(to top, rgba(116, 108, 106, 0.7), transparent);
   opacity: 0;
   transition: opacity 0.4s;
 }

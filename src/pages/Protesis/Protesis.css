@@ -1,5 +1,5 @@
 .protesis-btn {
-  background: linear-gradient(135deg, var(--brand-pink) 0%, var(--brand-pink-dark) 100%);
+  background: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-primary-dark) 100%);
 }
 
 @media (min-width: 768px) {
@@ -29,7 +29,7 @@
 }
 
 .protesis-cert-highlight {
-  color: var(--brand-pink);
+  color: var(--brand-primary);
 }
 
 .protesis-cert-desc {
@@ -48,7 +48,7 @@
 }
 
 .protesis-cert-icon {
-  color: var(--brand-pink);
+  color: var(--brand-primary);
   font-size: 1.25rem;
 }
 
@@ -72,7 +72,7 @@
 
 .cert-image-bg {
   inset: 0;
-  background-color: var(--brand-pink);
+  background-color: var(--brand-primary);
   border-radius: 1rem;
   opacity: 0.1;
   transform: translate(1rem, 1rem);
@@ -81,7 +81,7 @@
 .cert-image-img {
   width: 100%;
   border-radius: 1rem;
-  box-shadow: 0 20px 25px -5px rgba(205, 13, 126, 0.2);
+  box-shadow: 0 20px 25px -5px rgba(116, 116, 108, 0.2);
   pointer-events: none;
 }
 
@@ -91,12 +91,12 @@
   background: white;
   padding: 1rem;
   border-radius: 9999px;
-  box-shadow: 0 10px 15px -3px rgba(205, 13, 126, 0.2);
+  box-shadow: 0 10px 15px -3px rgba(116, 116, 108, 0.2);
 }
 
 .cert-badge-icon {
   font-size: 3.75rem;
-  color: var(--brand-pink);
+  color: var(--brand-primary);
 }
 
 /* Gallery Section */
@@ -164,7 +164,7 @@
 }
 
 .protesis-modal-close:hover {
-  color: var(--brand-pink);
+  color: var(--brand-primary);
 }
 
 .protesis-modal-content {
@@ -177,5 +177,5 @@
   width: auto;
   margin: 0 auto;
   border-radius: 0.5rem;
-  box-shadow: 0 25px 50px -12px rgba(205, 13, 126, 0.25);
+  box-shadow: 0 25px 50px -12px rgba(116, 116, 108, 0.25);
 }

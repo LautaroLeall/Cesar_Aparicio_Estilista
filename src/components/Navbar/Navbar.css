@@ -24,7 +24,7 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: 2px solid var(--brand-pink);
+  border: 2px solid var(--brand-primary);
   object-fit: cover;
 }
 
@@ -58,11 +58,11 @@
 }
 
 .navbar-links a:hover {
-  color: var(--brand-pink);
+  color: var(--brand-primary);
 }
 
 .navbar-cta {
-  background-color: var(--brand-pink);
+  background-color: var(--brand-primary);
   color: white !important;
   padding: 0.625rem 1.5rem;
   border-radius: 9999px;
@@ -72,7 +72,7 @@
 .navbar-hamburger {
   background: none;
   border: none;
-  color: var(--brand-pink);
+  color: var(--brand-primary);
   font-size: 1.5rem;
   cursor: pointer;
 }
@@ -99,11 +99,11 @@
 }
 
 .mobile-menu a:hover {
-  color: var(--brand-pink);
+  color: var(--brand-primary);
 }
 
 .mobile-menu .mobile-cta {
-  color: var(--brand-pink);
+  color: var(--brand-primary);
 }
 
 /* Desktop breakpoint */
