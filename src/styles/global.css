@@ -1,16 +1,18 @@
 @import "tailwindcss";
 
 :root {
-  --brand-pink: #cd0d7e;
-  --brand-pink-dark: #c41d83;
-  --brand-white: #ffffff;
+  --brand-primary: #74746c;
+  --brand-primary-dark: #746c6a;
+  --brand-white: #e4e3db;
+  --brand-dark: #0f0f0e;
+  --brand-muted: #8f8d89;
 }
 
 html,
 body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--brand-white);
-  color: #1a1a1a;
+  color: var(--brand-dark);
   overflow-x: hidden;
   width: 100%;
   margin: 0;
@@ -24,19 +26,19 @@ h3 {
 }
 
 .text-brand {
-  color: var(--brand-pink);
+  color: var(--brand-primary);
 }
 
 .bg-brand {
-  background-color: var(--brand-pink);
+  background-color: var(--brand-primary);
 }
 
 .border-brand {
-  border-color: var(--brand-pink);
+  border-color: var(--brand-primary);
 }
 
 .gradient-brand {
-  background: linear-gradient(135deg, var(--brand-pink) 0%, var(--brand-pink-dark) 100%);
+  background: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-primary-dark) 100%);
 }
 
 .btn-premium {
@@ -66,7 +68,7 @@ h3 {
 
 .btn-premium:hover {
   transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(205, 13, 126, 0.4);
+  box-shadow: 0 10px 20px rgba(116, 116, 108, 0.4);
 }
 
 ::-webkit-scrollbar {
@@ -78,7 +80,7 @@ h3 {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--brand-pink);
+  background: var(--brand-primary);
   border-radius: 10px;
 }
 
